@@ -10,6 +10,12 @@ var capBox = document.getElementById("cap");
 var submit = document.getElementById("submit");
 var yourPw = document.getElementById("yourPw");
 
+var charLength = prompt("How many characters would you like in your password?");
+
+if (charLength < 8 || charLength > 128) {
+  alert("character length needs to be between 8 and 128 characters");
+}
+
 submit.addEventListener("click",function(e){
     var characters = char;
     (numBox.checked) ? characters += num : '';
