@@ -28,5 +28,5 @@ function password(l,characters){
 }
 
 function copyToClipboard(pwd) {
-    window.prompt("Copy to clipboard: Ctrl+C, Enter", pwd);
+    alert("Copy to clipboard: Ctrl+C, Enter", pwd);
   }
