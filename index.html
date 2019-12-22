@@ -25,6 +25,9 @@
             font-weight: 400;
         }
 
+        #copy {
+            margin-left: 10px;
+        }
     </style>
 </head>
 
@@ -43,8 +46,9 @@
 
         <div class="col-md-9">
             <h3>Your Password:</h3>
-            <input type="text" id="yourPw" size="30"/><br><br>
-            <button id="submit" button type="button" class="btn btn-warning">Submit</button><br>
+            <input type="text" id="yourPw" size="30"/><button id="copy" button type="button" class="btn btn-warning">Copy</button><br><br>
+            <button id="submit" button type="button" class="btn btn-warning">Submit</button>
+            <br>
             <h4>How many characters?</h4>
             <input type="number" id="charNum" value="12" min="8" max="128" /> <br><br>  
             <div class="form-check form-check-inline">

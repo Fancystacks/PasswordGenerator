@@ -8,6 +8,7 @@ var numBox = document.getElementById("num");
 var symBox = document.getElementById("sym");
 var capBox = document.getElementById("cap");
 var submit = document.getElementById("submit");
+var copy = document.getElementById("copy");
 var yourPw = document.getElementById("yourPw");
 
 var charLength = prompt("How many characters would you like in your password?");
@@ -33,6 +34,7 @@ function password(l,characters){
 
 }
 
-function copyToClipboard(pwd) {
-    alert("Copy to clipboard: Ctrl+C, Enter", pwd);
-  }
+copy.onclick = function(){
+  yourPw.select();
+  document.execCommand("Copy");
+}
